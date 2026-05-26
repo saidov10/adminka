@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   Search,
@@ -7,10 +7,10 @@ import {
   ChevronRight,
   UserPlus,
   Trash2,
-  Edit3,
-  MoreVertical
+  Edit3
 } from 'lucide-react';
 import type { RootState, AppDispatch } from '../store/store';
+import type { UserProfile } from '../reducer/userSlice';
 
 import { fetchUserProfiles } from '../reducer/userSlice';
 
